@@ -1,5 +1,65 @@
 [
   {
+    "organizationId": "aca77a4e-ecb1-4eb3-a722-979977a52eb4",
+    "platform": "SNAPSHOT",
+    "title": "GR15 Round Structure",
+    "description": "Forum post: https://gov.gitcoin.co/t/proposal-gr15-round-structure/11272\n\nThis proposal looks to finalize round structure & matching pool allocations for Grants Round 15.\n\nVote\n\nThe two options to vote on are:\n\nOption 1: FOR GR15 Structure\n\nYou approve the GR15 structure as is, including the proposed decoupling of rounds.\n\nOption 2: AGAINST GR15 Structure\n\nYou do not approve of the GR15 structure, and will be submitting an alternate proposal for consideration.",
+    "proposer": "0x894aa5f1e45454677a8560dde3b45cb5c427ef92",
+    "proposalCreatedAt": "2022-08-19T00:38:23.000Z",
+    "proposalNativeId": "0x64bc572f0b50346e8d1f300b39d02204750ec4308002794dac9247422adb27bd",
+    "endedAt": "2022-08-24T01:00:00.000Z",
+    "status": "ACTIVE",
+    "totalVotes": "214",
+    "proposalUrl": "https://deepdao.io/feed-proposal/0x64bc572f0b50346e8d1f300b39d02204750ec4308002794dac9247422adb27bd",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0x894aa5f1e45454677a8560dde3b45cb5c427ef92/verified_dao_experience",
+    "rank": 1
+  },
+  {
+    "organizationId": "9cc495be-6062-4b31-b4f8-424438ec1ed4",
+    "platform": "SAFE",
+    "title": "Risk Parameter Updates for Aave V2: 2022-08-18",
+    "description": "\n\n## Simple Summary\n\nA proposal to adjust five (5) total risk parameters, including Liquidation Threshold and Liquidation Bonus across three (3) Aave V2 assets. \n\n\n\n## Abstract\nThis proposal is a batch update of risk parameters to align with the [Moderate risk level](https://snapshot.org/#/aave.eth/proposal/QmT9T4Rfnh1Z2HYmMPXvtFotMK2vSxiXK8dKStg2b6n4gi) chosen by the Aave community. These parameter updates are a continuation of Gauntlet\u2019s regular parameter recommendations. Our simulation engine has ingested the latest market data (outlined below) to recalibrate parameters for the Aave protocol. **Please note that this set of parameter changes will be lowering liquidation threshold for CRV.** The community has aligned on a [Risk Off Framework](https://snapshot.org/#/aave.eth/proposal/bafkreigdmcfmwvnxfolpds4xkdicgrszgmknig7pz2r2t37tltupdpyfu4) regarding lowering liquidation thresholds. \n\n\n## Motivation\n\n\nThis set of parameter updates seeks to maintain the overall risk tolerance of the protocol while making risk trade-offs between specific assets.\n\nGauntlet's parameter recommendations are driven by an optimization function that balances 3 core metrics: insolvencies, liquidations, and borrow usage. Parameter recommendations seek to optimize for this objective function. Our agent-based simulations use a wide array of varied input data that changes on a daily basis (including but not limited to asset volatility, asset correlation, asset collateral usage, DEX / CEX liquidity, trading volume, expected market impact of trades, and liquidator behavior). Gauntlet's simulations tease out complex relationships between these inputs that cannot be simply expressed as heuristics. As such, the input metrics we show below can help understand why some of the param recs have been made but should not be taken as the only reason for recommendation. The individual collateral pages on the [Gauntlet Risk Dashboard](https://gov.gauntlet.network/aave) cover other key statistics and outputs from our simulations that can help with understanding interesting inputs and results related to our simulations. \n\nFor more details, please see [Gauntlet's Parameter Recommendation Methodology](https://medium.com/gauntlet-networks/gauntlets-parameter-recommendation-methodology-8591478a0c1c) and [Gauntlet's Model Methodology](https://medium.com/gauntlet-networks/gauntlets-model-methodology-ea150ff0bafd). \n\n### Supporting Data on Aave V2\n\n**Top 30 non-recursive and partially-recursive aggregate positions**\n\n![](https://i.imgur.com/wNwliie.png)\n\n**Top 30 non-recursive and partially-recursive borrowers' entire supply**\n\n![](https://i.imgur.com/1t6xx1J.png)\n\n**Top 30 non-recursive and partially-recursive borrowers' entire borrows**\n\n![](https://i.imgur.com/AZIyE4A.png)\n\n\n\n\n\n**Top CRV non-recursive supplies and collateralization ratios:**\n\n![](https://i.imgur.com/pggzt0r.png)\n\n**Top DAI non-recursive supplies and collateralization ratios:**\n\n![](https://i.imgur.com/HBehpt2.png)\n\n**Top WBTC non-recursive supplies and collateralization ratios:**\n\n![](https://i.imgur.com/QHwW1K2.png)\n\n## Aave V2 Parameter Changes Specification\n\nGauntlet's simulation engine will continue to adjust risk parameters to maintain protocol market risk at safe levels while optimizing for capital efficiency.\n\n| Parameter | Current Value | Recommended Value |\n| -------- | -------- | -------- |\n| **CRV Liquidation Threshold**    | 64%     | ***61%***     |\n| CRV Liquidation Bonus    | 8.5%     | 8.0%     |\n| DAI Liquidation Threshold     | 85%     | 90%     |\n| WBTC Liquidation Threshold     | 75%     | 80%     |\n| WBTC Liquidation Bonus    | 6.5%     | 5.0%     |\n\n\n\n## Notable Accounts to Flag\n\nAs of 8/18/2022, the data shows that no accounts would be liquidated as a result of these parameter updates. This could change if prices move significantly. On a daily basis, up until this proposal is executed, we will check whether these parameter updates will cause any liquidations and update the community on this forum post.\n\n\n## Risk Dashboard\n\n\n\nThe community should use Gauntlet's [Aave V2 Risk Dashboard](https://gov.gauntlet.network/aave) to understand better the updated parameter suggestions and general market risk in Aave V2. Gauntlet has also launched the [Aave Arc Risk Dashboard](https://gov.gauntlet.network/aave_arc).\n\nValue at Risk represents the 95th percentile **insolvency value** that occurs from simulations we run over a range of volatilities to approximate a tail event. \n\nLiquidations at Risk represents the 95th percentile **liquidation volume** that occurs from simulations we run over a range of volatilities to approximate a tail event.\n\n### Aave V2 Dashboard\n\n![](https://i.imgur.com/pD6AJx9.png)\n\n\n\n\n\n\n\n\n\n## Next Steps\n* Targeting an AIP on 2022-08-23\n\n*By approving this proposal, you agree that any services provided by Gauntlet shall be governed by the terms of service available at gauntlet.network/tos.*\n",
+    "proposer": "0xdd659911ecbd4458db07ee7cddec79bf8f859abc",
+    "proposalCreatedAt": "2022-08-18T22:44:07.000Z",
+    "proposalNativeId": "0x2940cd025de1f55d9156019f038d5eb850fd77c8cfc4feca206f838c94aaa1f1",
+    "endedAt": "2022-08-23T19:00:00.000Z",
+    "status": "ACTIVE",
+    "totalVotes": "678",
+    "proposalUrl": "https://deepdao.io/feed-proposal/0x2940cd025de1f55d9156019f038d5eb850fd77c8cfc4feca206f838c94aaa1f1",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0xdd659911ecbd4458db07ee7cddec79bf8f859abc/verified_dao_experience",
+    "rank": 2
+  },
+  {
+    "organizationId": "aca77a4e-ecb1-4eb3-a722-979977a52eb4",
+    "platform": "SNAPSHOT",
+    "title": "Memes, Merch and Marketing Season 15 Budget Request",
+    "description": "This vote is to determine if the S15 budget for the MMM Workstream is approved or if it should be rejected.\n\nThe total amount requested is $172,935, to be paid in GTC.\n\nFor more details, please see this post: https://gov.gitcoin.co/t/s15-proposal-integrated-mmm-budget-request/11222\n\nThe GTC total will be determined, based on (a) the current market price of GTC at the time this proposal is moved to Tally, and (b) the remaining balance in the MMM Multisig (which will determine how much net new funding we require).\n\nTL;DR\nMMM is laser focused on improving the DAO\u2019s overall marketing tactics and operations with a strategic lens. Much of this work will be focused on creating solid marketing foundations for our protocols while also growing our community and grants programs.\n\nIn addition to aligning and driving strategic marketing initiatives, our S15 priorities will include social media management, analytics, content development, and protocol branding work.\n\nBelow is a list of our top 6 priorities for the next 90 days:\n- Branding for the Protocols suite including new names, a narrative framework, visual identity, and robust content plan\n- Onboarding a fractional product marketing manager to support the launch of the protocols suite\n- Create a comprehensive grants program marketing strategy in partnership with with PGF\n- Publish grantee success stories in the form of blog posts and case studies\n- Develop clear guidelines for what \u201ccommunity engagement\u201d means and looks like at Gitcoin through a community engagement strategy (in collaboration with PGF and DAO Ops)\n- Successful co-marketing partnership product partnership launches with Optimism and Fantom",
+    "proposer": "0xc2e2b715d9e302947ec7e312fd2384b5a1296099",
+    "proposalCreatedAt": "2022-08-17T18:58:43.000Z",
+    "proposalNativeId": "0x6f9c5c8b4a7b736557afae1457c9465275e37516967e15593c51c3376b661b13",
+    "endedAt": "2022-08-24T16:00:00.000Z",
+    "status": "ACTIVE",
+    "totalVotes": "381",
+    "proposalUrl": "https://deepdao.io/feed-proposal/0x6f9c5c8b4a7b736557afae1457c9465275e37516967e15593c51c3376b661b13",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0xc2e2b715d9e302947ec7e312fd2384b5a1296099/verified_dao_experience",
+    "rank": 3
+  },
+  {
+    "organizationId": "9cc495be-6062-4b31-b4f8-424438ec1ed4",
+    "platform": "SAFE",
+    "title": "Asset Listing Framework (Market Risk) and Community Consensus Check",
+    "description": "\n## Simple Summary\n\nThis Snapshot vote establishes community consensus on whether:\n1. New assets are not required to be listed with an initial LTV of 0%, or\n2. New assets are required to be listed with an initial LTV of 0%.\n\n\n## Motivation\n\n\nSince Gauntlet began its partnership with the Aave protocol, we have received requests from the Community to analyze asset listings. Community members, developers, and other stakeholders often asked us questions like, \"how much liquidity should this asset have before being listed? What should the asset's initial parameters be? How do we protect the protocol from insolvency?\" \n\nGauntlet's framework focuses specifically on market risk and how Gauntlet will support the asset listing process in Aave. Our framework can be found [here](https://www.notion.so/gauntlet/Aave-Asset-Listing-Framework-Market-Risk-7c29d448924f444abfa9681410c707c3). This will work in conjunction with [Aave's existing asset listing framework](https://docs.aave.com/governance/guides/new-asset-listing). \n\nListing assets is essential to the growth of the protocol. As new assets in DeFi proliferate and older assets fall out of favor, Aave must list and delist assets to maintain its usefulness as a protocol. Gauntlet will conduct these risk assessments prior to new assets being listed, given 2 weeks of notice and strong community buy-in.\n\nNotably, we recommend that LTV and Liquidation Threshold be set to 0% on the initial listing. In other words, assets will not be allowed to be used as collateral upon their initial listing. \n\nHistorically, the community has listed assets with non-zero LTV and Liquidation Threshold. Because there are risks in doing so, this Snapshot vote helps the community align on best practices moving forward.\n\n\n## Specification\n\nCommunity input is valuable because requiring that assets are listed with an initial LTV of 0% imposes important trade-offs:\n\n1. Not requiring assets to be listed with an initial LTV of 0% can potentially allow the asset to have more utility (depending on the asset) from the onset of listing. Thus, the protocol may be earning revenue at the onset of the listing (driven by increased borrows). However, when assets are enabled as collateral from the initial listing, the protocol immediately faces the technical and market risks inherent in adding another risk vector to the protocol. The protocol is only as strong as its weakest link.\n2. Requiring assets to be listed with an initial LTV of 0% can protect the protocol from unforeseen mechanism, smart contract, and other technical risks. In addition, setting an initial LTV of 0% allows the protocol to observe how supply and borrow usage as well as liquidity conditions evolve following the asset listing. This data enables more robust risk analysis and fine-tuning of LTV and Liquidation Threshold parameters following the initial asset listing. The tradeoff is that until an asset is enabled as collateral, usage may be limited (depending on the asset), and thus, the protocol faces an opportunity cost of revenue. We view this as a minuscule opportunity cost (e.g., a few weeks of revenue attributable to the asset) relative to the risks. Assets can be turned on as collateral, but being turned off as collateral is a more difficult process with increased user friction.\n\n\nOption 1 above should not be interpreted as suggesting that all assets should be enabled as collateral. It simply allows for the possibility that assets can be listed with an initial non-zero LTV should the community deem the asset a collateral asset.\n\nShould the community favor Option 2, assets should be listed with an initial LTV of 0%, and a separate proposal must be proposed by the community at some point after the initial listing to enable the asset as collateral. At that point in time, given strong community buy-in, Gauntlet will conduct market risk analysis to recommend LTV and Liquidation Threshold parameters.\n\n## Next Steps\n\n\n* This Snapshot vote has the below options:\n1. Not all assets are required to be listed with an initial LTV of 0%.\n2. All assets are required to be listed with an initial LTV of 0%. After 2-3 weeks of operation as a non-collateral asset, the community can propose turning it on as collateral. At that point, Gauntlet will make parameter recommendations as per our Notion document below.\n\n\n\n\n\n### Quick Links\n[Gauntlet Asset Listing Framework for Market Risk](https://www.notion.so/gauntlet/Aave-Asset-Listing-Framework-Market-Risk-7c29d448924f444abfa9681410c707c3)\n\n\n\n\n\n*By approving this proposal, you agree that any services provided by Gauntlet shall be governed by the terms of service available at gauntlet.network/tos.*\n\n",
+    "proposer": "0xdd659911ecbd4458db07ee7cddec79bf8f859abc",
+    "proposalCreatedAt": "2022-08-16T21:08:49.000Z",
+    "proposalNativeId": "0x1e22490f0b28c3c262341ee2c13c08236bddb2936d2893c203a16e3f850963ce",
+    "endedAt": "2022-08-24T22:00:00.000Z",
+    "status": "ACTIVE",
+    "totalVotes": "1196",
+    "proposalUrl": "https://deepdao.io/feed-proposal/0x1e22490f0b28c3c262341ee2c13c08236bddb2936d2893c203a16e3f850963ce",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0xdd659911ecbd4458db07ee7cddec79bf8f859abc/verified_dao_experience",
+    "rank": 4
+  },
+  {
     "organizationId": "fd991dca-141d-4e23-a23b-5d908110c337",
     "platform": "SNAPSHOT",
     "title": "Vote to engage a Head of Legal & General Counsel for Lido",
@@ -9,25 +69,25 @@
     "proposalNativeId": "0x1454174da2e17ce3eca6afe8114678c0971a4ece33cedf7fd21c57d2b9f44da9",
     "endedAt": "2022-08-26T17:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "191",
+    "totalVotes": "519",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x1454174da2e17ce3eca6afe8114678c0971a4ece33cedf7fd21c57d2b9f44da9",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xdbbc6a93ae517d3ea568c04219cbbbd025f01cb6/verified_dao_experience",
-    "rank": 1
+    "rank": 5
   },
   {
-    "organizationId": "219ab5ef-9345-448b-bbf2-786a33e4edd8",
+    "organizationId": "bf1e17cf-9bb3-4dd5-bec3-e54ef70fc3a6",
     "platform": "SNAPSHOT",
-    "title": "Setting limits on the number of borrowed gotchis allowed per wallet address",
-    "description": "Author: eMM#9638\nGotchi ID: 23748\nDiscourse Threads: \nhttps://dao.aavegotchi.com/t/from-days-to-blocks-modifying-the-new-renting-safeguards/4274\nhttps://dao.aavegotchi.com/t/anti-botting-limits-on-rentals/4294\nhttps://dao.aavegotchi.com/t/reform-public-rental-market/4089\n\nUntil recently there have been no limits on the number of gotchis an address can borrow at the same time, either from a whitelist or from the open (non whitelisted) market. \n\nThis was recently changed to a limit of 1 borrowed gotchi on the open market and 1 by default on all whitelists. A whitelist owner can change the number of allowed borrowed gotchis per address using Louper Dev, and soon, through the official UI.\n\nThis change was put in place with no warning as an experiment in anti botting measures. Community members had reported difficulty in securing a gotchi to borrow for channelling, particularly around the 0:00UTC reset time, which has been attributed to bots scraping all the best rental offers before humans get a chance.\n\nThe change has so far seen Gotchigang report an increase in available gotchis to borrow around reset time which is a positive.\n\nOn the negative side, other Gotchigang have reported being unable to fully channel their aaltars due to not being able to rent enough gotchis. This is particularly for borrowers who\u2019ve paid, say, 20ghst for a long term rental and are now stuck with that 1 gotchi and are unable to channel other parcels using other borrowed gotchis. This issue will tend to grow over time as people level up their aaltars and generate more channelling opportunities. The current limit on the open market is a disincentive to levelling up aaltars and purchasing more land for those without enough gotchis who prefer longer term rentals. It could also severely limit the demand for lending out gotchis long term, however it forces people to approach multiple guilds/whitelist owners for spots which is a positive for the social element of the game.\n\nA poll was run in the weekly DAO Hangout by CoderDan with the results suggesting most community members would prefer the allowed number of borrowed gotchis on the open market to reflect the number of parcels a wallet address holds plus 1, so in theory each parcel could be channelled once per day whilst still holding longer term rentals. For single channel rentals this is less of a concern as people can return a gotchi and borrow another as soon as they\u2019ve finished using it. \n\nFurther increasing the borrowing limit up to the number of available channellings per address was suggested by considering aaltar levels as well, but it was deemed too inefficient to be constantly recalculating this number dynamically in the background.\n\nhttps://discord.com/channels/732491344970383370/892307846010658856/1008035273168392243\n\nAs this was an experiment, I propose we revert these changes back now and continue to monitor the impacts so we can be clearer on the severity of the botting issue and be more confident in the effectiveness of this solution, whilst voting to implement the below. \n\nOnce this experimental change is reverted, voting for option 1 in this proposal will set in place the following:\n\n\u2022\tSet a limit on the number of gotchis each address can borrow from the open market equal to the number of parcels in the borrower\u2019s wallet plus 1.\n\n\u2022\tSet a default limit of 1 borrowed gotchi per address for all existing and new whitelists while giving the whitelist creator the ability to change that limit up to any number.\n\nVoting Options:\n1)\tSet the limit on the number of gotchis each address can borrow from the open market equal to the number of parcels in the borrower\u2019s wallet plus 1 \nAND set a default limit of 1 borrowed gotchi per address for all existing and new whitelists while giving whitelist creators the ability to change that limit up to any number.\n\n2) Revert back to the original unlimited system and do nothing further, allowing unlimited numbers of borrowed gotchis per address both on the open market and through whitelists.\n\n3) Revert back and leave the open rental market to allow unlimited gotchis to be borrowed, but set the default to 1 on all whitelists and implement the ability for whitelist creators to change the limit per whitelist.\n\n4) Do not revert back and leave the current limits of 1 in place across whitelists and the open market (WL owners can still increase the number).\n",
-    "proposer": "0xabf128d4be3072cdfcb021e702d2b8d8437c789d",
-    "proposalCreatedAt": "2022-08-15T07:49:28.000Z",
-    "proposalNativeId": "0x8d17ac8fd583bfa75412b29cc74cdd3cfd20dd5719ea2d4687c8f6e7ad746b1d",
-    "endedAt": "2022-08-23T02:00:00.000Z",
+    "title": "MIP-1: MIST Tokenomics Improvement",
+    "description": "**MIP-1: MIST Tokenomics, A Proposed Catalyst for Growth**\n\nThe details of the new tokenomics proposal are as follows:\n1. Redirect the MIST inflation currently sent to existing MIST-WETH LP stakers to instead go to the Alchemist Multisig for the sole purpose of funding and incubating new products.\n2. Redirect up to a maximum of half of the revenue airdrop going to MIST-WETH LPs Rewards to go to single-sided MIST stakers in a new rewards program called \u201cCommunity Harvest Alchemist Distribution (CHAD)\u201d aka \u201cCHAD Stakers Rewards\u201d. The proportion of revenue redirected is variable and will be determined by the proportion of single-sided MIST being staked relative to current free-floating MIST supply. Rename the Aludel Rewards for MIST-WETH LPs as \u201cCHAD LPs Rewards\u201d.\n3. Revenue airdrops for both CHAD rewards programs would be airdropped in the currencies that they are earned in, rather than MIST. Historically these native tokens would include USDC, ETH, WETH.\n4. To be eligible for CHAD Stakers Rewards, one\u2019s tokens need to be locked in the CHAD program for a minimum period of 90 days. Withdrawing a stake prematurely will result in the forfeiture of any rewards earned.\n5. Before revenue airdrops are distributed, analysis of the free-floating MIST supply will be undertaken and distributed according to the threshold levels laid out in the table below. Establishing which threshold has been reached will be performed on a monthly basis. The Alchemist Council will monitor participation in the rewards programs and reserves the right to make adjustments to the thresholds and splits within it in order to promote a healthy balance between MIST-WETH LPs and single-sided MIST stakers.\n6. Governance will be limited to individuals participating in either CHAD Rewards program (Staking LP or Staking MIST) and will be proportionally split between these two groups based on the amount of revenue received. For example, if CHAD LP stakers are receiving 75% of the allotted revenue for stakers and CHAD MIST stakers are only receiving 25% of the revenue then CHAD LP stakers will have 3x the governance power. If both groups were receiving 50% of allotted revenues (equal split) then they would have the same governance power.\n\nThe following are the proposed single-sided staking levels to unlock the revenue redirection from CHAD Rewards for LPs to CHAD Stakers Rewards. This can be thought of as a coordination game between single-side MIST stakers. The Based Alchemist Games (BAGs) have four levels that lead up to the climax of the game (ie. max rewards per % of free-floating MIST staked).\n\n|BAG Levels|% of free-floating MIST staked in Crucibles|% of revenue airdropped to CHAD LPs|% of revenue airdropped to CHAD Stakers|\n| -------- | -------- | -------- | -------- |\n|Default|0 - 29.99|47.5|2.5|\n|1st Base|30 - 44.99|45|5|\n|2nd Base|45 - 59.99|42.5|7.5|\n|3rd Base|60 - 69.419|35|15|\n|4th Base|> 69.420|25|25|\n\nThe full proposal can be viewed at: https://discourse.alchemist.wtf/t/mip-1-mist-tokenomics-a-proposed-catalyst-for-growth/118\n\nAfter passing polling within the Discourse with overwhelming support in favor, the proposal is now moving to a snapshot vote.\n\n**Voting Process**\n\nMIST - All MIST tokens you hold in your wallet and/or Crucible added together.\nMIST/WETH LP - Your liquidity provision tokens equated to the number of MIST tokens, e.g. 1 MIST/WETH LP = 59 MIST.\n\nThis means that token holders and liquidity providers are treated equally and are all able to vote no matter if they hold their coins in a Crucible or wallet. The vote will be conducted quadratically, allowing users to spread their voting power as they see fit.\n",
+    "proposer": "0x8885d282b566a8bb821d29b8f493616423ed5e68",
+    "proposalCreatedAt": "2022-08-15T20:04:31.000Z",
+    "proposalNativeId": "0xf0ae1982a036af6a98536121beea50d94c823fd911d36dd7dcc3877f810c2e46",
+    "endedAt": "2022-08-24T03:59:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "327",
-    "proposalUrl": "https://deepdao.io/feed-proposal/0x8d17ac8fd583bfa75412b29cc74cdd3cfd20dd5719ea2d4687c8f6e7ad746b1d",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0xabf128d4be3072cdfcb021e702d2b8d8437c789d/verified_dao_experience",
-    "rank": 2
+    "totalVotes": "232",
+    "proposalUrl": "https://deepdao.io/feed-proposal/0xf0ae1982a036af6a98536121beea50d94c823fd911d36dd7dcc3877f810c2e46",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0x8885d282b566a8bb821d29b8f493616423ed5e68/verified_dao_experience",
+    "rank": 6
   },
   {
     "organizationId": "eca543d2-143e-42a2-82cb-028de5744f15",
@@ -39,10 +99,10 @@
     "proposalNativeId": "0x2f932c719af59be0d9e2c7120c3b36335f434c4d7500aeef1b33474cdda4d4a3",
     "endedAt": "2022-08-25T12:03:45.000Z",
     "status": "ACTIVE",
-    "totalVotes": "329",
+    "totalVotes": "345",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x2f932c719af59be0d9e2c7120c3b36335f434c4d7500aeef1b33474cdda4d4a3",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x0b0d9a5335ad587e162628e6aaa4bedb7c5740c8/verified_dao_experience",
-    "rank": 3
+    "rank": 7
   },
   {
     "organizationId": "fd991dca-141d-4e23-a23b-5d908110c337",
@@ -57,7 +117,7 @@
     "totalVotes": "791",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xcb31f1b6e8c160a4c1ccb0145edf3102c8561cf409a68baff9fa629cd1b5e37a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x0f0b2adc2c4da73ed2721f6f270cbacf8c5355bb/verified_dao_experience",
-    "rank": 4
+    "rank": 8
   },
   {
     "organizationId": "d658d832-10bc-4a4d-a2f6-e701f2df2963",
@@ -72,7 +132,7 @@
     "totalVotes": "793",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x66f1890fe2eb9995f7ebc877aedb69ff73424dd80b774a8955f4c14be68bf360",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9eafa492ea977985d16cb3c2007a92c446950c2e/verified_dao_experience",
-    "rank": 5
+    "rank": 9
   },
   {
     "organizationId": "2627b664-fed1-4a35-b0a4-c7da20e82c72",
@@ -87,7 +147,7 @@
     "totalVotes": "319",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x6416317c3345ef693df606480035f05832792d6a108d1941c85f73dbeee1cce1",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9596eff0cdadec7fb16a6abcf1513919a7acd738/verified_dao_experience",
-    "rank": 6
+    "rank": 10
   },
   {
     "organizationId": "390f2dc4-f7d6-4ea1-bc11-f168afadabbd",
@@ -102,7 +162,7 @@
     "totalVotes": "184",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x265e1ba6757bdf7421c1eb411d884d24c489ea5886f43aab7c8e74a06ae8a3ee",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xb2732746e3fdd68b94ff1a6dd7e2744743aaac78/verified_dao_experience",
-    "rank": 7
+    "rank": 11
   },
   {
     "organizationId": "656f4b59-1cb8-4c3f-a9cb-4c1ca55f5a1e",
@@ -114,10 +174,10 @@
     "proposalNativeId": "0x4fe5bb66fb43b0a61376b2173d85a39df3f4b28131995674161072e2c1320ade",
     "endedAt": "2022-09-30T05:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "370",
+    "totalVotes": "371",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x4fe5bb66fb43b0a61376b2173d85a39df3f4b28131995674161072e2c1320ade",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x4c7909d6f029b3a5798143c843f4f8e5341a3473/verified_dao_experience",
-    "rank": 8
+    "rank": 12
   },
   {
     "organizationId": "b6b47015-4dd4-45e2-b4c0-db707e1ed25e",
@@ -132,7 +192,7 @@
     "totalVotes": "305",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x29291b60cabc79c97e6b021a3aae895d43f3783f6c59d4c8a885b86c068aab7a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xfa68c97a6d477c78ca6ff3cac41a26ecf995bd81/verified_dao_experience",
-    "rank": 9
+    "rank": 13
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -147,22 +207,7 @@
     "totalVotes": "195",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmdxXnx2V7zfoG2bQ7Pqw1NKsFWnU6H3rVcrKTnJRv3m9J",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x59f4b03059396d6d30acaac394895b80b2d625da/verified_dao_experience",
-    "rank": 10
-  },
-  {
-    "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
-    "platform": "SNAPSHOT",
-    "title": "Raising money for mom",
-    "description": "Hey guys, my mom needs help to build her house. Right now she lives in one room with two boys, dad isn't around and I'm trying to help her to build her new house to make life better. Can you all send $1 worth of BNB or CAKE each? It will add up and count. Thank you :)",
-    "proposer": "0x13c85f57c7fd1be58c06e62f22a0cbc90751029e",
-    "proposalCreatedAt": "2022-04-16T04:15:42.000Z",
-    "proposalNativeId": "QmYdeeiKP57bJ7exhPMNWvGyWzHLbbMdME3BemR7GC6vzA",
-    "endedAt": "2022-12-31T05:00:00.000Z",
-    "status": "ACTIVE",
-    "totalVotes": "178",
-    "proposalUrl": "https://deepdao.io/feed-proposal/QmYdeeiKP57bJ7exhPMNWvGyWzHLbbMdME3BemR7GC6vzA",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0x13c85f57c7fd1be58c06e62f22a0cbc90751029e/verified_dao_experience",
-    "rank": 11
+    "rank": 14
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -177,7 +222,7 @@
     "totalVotes": "183",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmQC6a9pVDXFbTUgkaNBHCCoXeUd8ye6hVGSmZ3ypRHNs4",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x390068fd83a5772d40d99f490088b12829c5aeea/verified_dao_experience",
-    "rank": 12
+    "rank": 15
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -192,7 +237,7 @@
     "totalVotes": "235",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmaT7oiHd2GG1n8UVMbELtTFLajuN8Wv66cWz8zNi3RHu2",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x390068fd83a5772d40d99f490088b12829c5aeea/verified_dao_experience",
-    "rank": 13
+    "rank": 16
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -207,7 +252,7 @@
     "totalVotes": "222",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmX352n6EcxKaJWZqYS9tp6qytTsS3jfaFmJLWjAv7CVN4",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xdcbc430e2858177aaf8215e1a274a954f47c4b39/verified_dao_experience",
-    "rank": 14
+    "rank": 17
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -222,7 +267,7 @@
     "totalVotes": "190",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmaLFGDwHP14nV5wqLw9MXV4KoXjtyRCC7J8McqKMf2mmf",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x47150580574152018af7b26ffeb25e9e303cbc5f/verified_dao_experience",
-    "rank": 15
+    "rank": 18
   },
   {
     "organizationId": "65d1dd78-b3ed-4680-a4d5-338dd4d9d7b7",
@@ -237,7 +282,7 @@
     "totalVotes": "234",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x889f248c8390c61af2599aecf3b53ef5655309fc554986d04d906cb8eda287b3",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x5da3e1051ba8c38bf17c8a4bb266e88b54bfea4e/verified_dao_experience",
-    "rank": 16
+    "rank": 19
   },
   {
     "organizationId": "f371d9fe-db1d-4ea0-9583-531c3ebb1cfe",
@@ -252,7 +297,7 @@
     "totalVotes": "238",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x7b3be7e05d6d16a7c737bb2ae2bc94e5a979bf94d177fb664c5c5867aad3e572",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x98ee51a2119520e562ed724ae2a933be5542bb9d/verified_dao_experience",
-    "rank": 17
+    "rank": 20
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -264,10 +309,10 @@
     "proposalNativeId": "0x6aac9de28a98997bba693476e6f0f4aed37219a59f96e0b0ec4c51eba6b36ca3",
     "endedAt": "2022-12-26T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "1713",
+    "totalVotes": "1726",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x6aac9de28a98997bba693476e6f0f4aed37219a59f96e0b0ec4c51eba6b36ca3",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x98ee51a2119520e562ed724ae2a933be5542bb9d/verified_dao_experience",
-    "rank": 18
+    "rank": 21
   },
   {
     "organizationId": "4b71babe-cd23-4350-a553-03f0ddf84449",
@@ -282,7 +327,7 @@
     "totalVotes": "329",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xe568649ecd3941202519f49a70dde064e463986c6a648dae0625bd0394ac6d04",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x5da3e1051ba8c38bf17c8a4bb266e88b54bfea4e/verified_dao_experience",
-    "rank": 19
+    "rank": 22
   },
   {
     "organizationId": "4b71babe-cd23-4350-a553-03f0ddf84449",
@@ -297,7 +342,7 @@
     "totalVotes": "302",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x323690d2b7a4d1119a9dfded1e95278fd43d51dd98e3c4be524a4265d44ffca0",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x46496ce9c6771548e5c5f99f958db910c3fd3607/verified_dao_experience",
-    "rank": 20
+    "rank": 23
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -309,10 +354,10 @@
     "proposalNativeId": "0x5ed4fc1e97d899be4e4580f7a06a977cd0afcb7cf3c345247d8af32fd5c91e3e",
     "endedAt": "2022-12-03T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "1765",
+    "totalVotes": "1778",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x5ed4fc1e97d899be4e4580f7a06a977cd0afcb7cf3c345247d8af32fd5c91e3e",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xb6253ecddcf2706a049aa622a10e09991725a29c/verified_dao_experience",
-    "rank": 21
+    "rank": 24
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -324,10 +369,10 @@
     "proposalNativeId": "0x998d94e784e0213631ad73ad35f49b181ed5e340c93d96d1261b0ea2ceb1cecc",
     "endedAt": "2022-12-05T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "1732",
+    "totalVotes": "1744",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x998d94e784e0213631ad73ad35f49b181ed5e340c93d96d1261b0ea2ceb1cecc",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xd8568406644708a2bbdfeb56c5173e721907a8c2/verified_dao_experience",
-    "rank": 22
+    "rank": 25
   },
   {
     "organizationId": "4b71babe-cd23-4350-a553-03f0ddf84449",
@@ -342,7 +387,7 @@
     "totalVotes": "287",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x133d2e94086a457d0d60c589655842189de1a33b1a1fc2eef33a28e799d99768",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x8a64a943ba6f803b6f08c1ba53e0d0a00be195c1/verified_dao_experience",
-    "rank": 23
+    "rank": 26
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -354,10 +399,10 @@
     "proposalNativeId": "0x3f68f86a07ce9320da92f075192d948702a38c1bb9a0ece8ad348d7407abc09f",
     "endedAt": "2022-12-08T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "1603",
+    "totalVotes": "1615",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x3f68f86a07ce9320da92f075192d948702a38c1bb9a0ece8ad348d7407abc09f",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x0be2163c4d25816bcfa4db17e0a97b224fee0144/verified_dao_experience",
-    "rank": 24
+    "rank": 27
   },
   {
     "organizationId": "4b71babe-cd23-4350-a553-03f0ddf84449",
@@ -372,7 +417,7 @@
     "totalVotes": "276",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x5aae77420ab2b2ce2c6050894052fc78fd63150c58d6f3c1b98f797f51d43f3e",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x0fecfca94170197040937a2936a1826696681b6e/verified_dao_experience",
-    "rank": 25
+    "rank": 28
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -384,10 +429,10 @@
     "proposalNativeId": "0x14255e6e42c26e75ee72156b1d3fec926e90c8889df0b4889eff523f3782fc12",
     "endedAt": "2022-12-12T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "1543",
+    "totalVotes": "1555",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x14255e6e42c26e75ee72156b1d3fec926e90c8889df0b4889eff523f3782fc12",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xebf33408b53529c885d60ea285f2948842f36ee2/verified_dao_experience",
-    "rank": 26
+    "rank": 29
   },
   {
     "organizationId": "4b71babe-cd23-4350-a553-03f0ddf84449",
@@ -402,7 +447,7 @@
     "totalVotes": "265",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x887179f55c02f9f1e292ee94898e542a02131a2b04a548bf8e17cfd7673d94bb",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x1215d8f1ff1df42a084c533cb6f70f69c0e07052/verified_dao_experience",
-    "rank": 27
+    "rank": 30
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -414,10 +459,10 @@
     "proposalNativeId": "0xa1c4b3e412dc7200b4c8a8609d916afe3c6c1199e79889fe25dd3c369152538b",
     "endedAt": "2022-12-18T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "856",
+    "totalVotes": "868",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xa1c4b3e412dc7200b4c8a8609d916afe3c6c1199e79889fe25dd3c369152538b",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xdaae34a2bd629e4670e0c77c98b7cecea1d2f08a/verified_dao_experience",
-    "rank": 28
+    "rank": 31
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -429,10 +474,10 @@
     "proposalNativeId": "0x133e3f683e4b6020993c0874740be3ca33ba4b138c771d2d26812212a10f8e33",
     "endedAt": "2022-12-19T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "713",
+    "totalVotes": "725",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x133e3f683e4b6020993c0874740be3ca33ba4b138c771d2d26812212a10f8e33",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xb761c66bf4c5145c850b40ba0c32bb8f5ce6bfb1/verified_dao_experience",
-    "rank": 29
+    "rank": 32
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -444,10 +489,10 @@
     "proposalNativeId": "0x8b8f9e57d7fbd972a91f30bd408905d89e8d446b2769edacab333167f5c88203",
     "endedAt": "2022-12-22T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "734",
+    "totalVotes": "746",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x8b8f9e57d7fbd972a91f30bd408905d89e8d446b2769edacab333167f5c88203",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xcbe0e5622d31a9ef86de83ea41af33fd4617a555/verified_dao_experience",
-    "rank": 30
+    "rank": 33
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -459,10 +504,10 @@
     "proposalNativeId": "0x0811dea8483c59e88df3040cdec7f8ece25fd20763a86aef4cf90efa006f8e1d",
     "endedAt": "2022-12-27T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "694",
+    "totalVotes": "706",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x0811dea8483c59e88df3040cdec7f8ece25fd20763a86aef4cf90efa006f8e1d",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x7532f5c18b5e2197f2bc186671dd658067423ede/verified_dao_experience",
-    "rank": 31
+    "rank": 34
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -474,10 +519,10 @@
     "proposalNativeId": "0xe55e4d29c8457818724acda76094aa94301e0b6e14f335c1c994133e5eff0e96",
     "endedAt": "2022-11-20T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "739",
+    "totalVotes": "751",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xe55e4d29c8457818724acda76094aa94301e0b6e14f335c1c994133e5eff0e96",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x119e72114566da53c13c3159f37e9dfb1c0b5537/verified_dao_experience",
-    "rank": 32
+    "rank": 35
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -489,10 +534,10 @@
     "proposalNativeId": "0x107021c4f26cac988b538e8e092e58e27bef6a9d42164e21e4eebd9ce5134478",
     "endedAt": "2022-12-29T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "721",
+    "totalVotes": "733",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x107021c4f26cac988b538e8e092e58e27bef6a9d42164e21e4eebd9ce5134478",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x3181c9f4616932599add7e6da17a9f114e3cef2b/verified_dao_experience",
-    "rank": 33
+    "rank": 36
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -504,10 +549,10 @@
     "proposalNativeId": "0xb1c004ac9dd994e0057875c05af3e55c3ff40dcd3055507262f2a99ccf2892df",
     "endedAt": "2022-10-31T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "895",
+    "totalVotes": "907",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xb1c004ac9dd994e0057875c05af3e55c3ff40dcd3055507262f2a99ccf2892df",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xdb4e69ca236766c27dfd54affbb92018abb71e05/verified_dao_experience",
-    "rank": 34
+    "rank": 37
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -519,10 +564,10 @@
     "proposalNativeId": "0xb3b25eef5ba72b0a91d162757fbb9d0930dcdf15811e48fd5f5da224363b7307",
     "endedAt": "2022-12-21T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "948",
+    "totalVotes": "960",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xb3b25eef5ba72b0a91d162757fbb9d0930dcdf15811e48fd5f5da224363b7307",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xffa92c8083658c5601c3785516f49ac37f058a21/verified_dao_experience",
-    "rank": 35
+    "rank": 38
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -534,10 +579,10 @@
     "proposalNativeId": "0x3da950e6b191ee91ce925de7b2606c999c11054e936ec6e0fc1b907510788152",
     "endedAt": "2022-10-31T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "914",
+    "totalVotes": "926",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x3da950e6b191ee91ce925de7b2606c999c11054e936ec6e0fc1b907510788152",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x7ab37f3c29a243d97751026b256e7b5ecfda11d1/verified_dao_experience",
-    "rank": 36
+    "rank": 39
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -549,10 +594,10 @@
     "proposalNativeId": "0xb4242d05b60fbfc19e4916b50e05e972014b9f89b3e2240ef76ddd1820f7fb77",
     "endedAt": "2022-12-18T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "932",
+    "totalVotes": "944",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xb4242d05b60fbfc19e4916b50e05e972014b9f89b3e2240ef76ddd1820f7fb77",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x3181c9f4616932599add7e6da17a9f114e3cef2b/verified_dao_experience",
-    "rank": 37
+    "rank": 40
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -564,10 +609,10 @@
     "proposalNativeId": "0x8e87149743dec21bd40fdc24ee1344ff2e6317b834f1ed186448805b083d14b8",
     "endedAt": "2022-12-31T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "850",
+    "totalVotes": "862",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x8e87149743dec21bd40fdc24ee1344ff2e6317b834f1ed186448805b083d14b8",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x58535e81564a72315bb2c309578f0b7757ec52d2/verified_dao_experience",
-    "rank": 38
+    "rank": 41
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -579,10 +624,10 @@
     "proposalNativeId": "0x52c82db51c9ce90754b9c40d280d01725cd7bcfab31327836f3a871311c31ac0",
     "endedAt": "2022-11-30T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "757",
+    "totalVotes": "769",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x52c82db51c9ce90754b9c40d280d01725cd7bcfab31327836f3a871311c31ac0",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xada0272a23465975c472e04524507241cffdc451/verified_dao_experience",
-    "rank": 39
+    "rank": 42
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -594,10 +639,10 @@
     "proposalNativeId": "0xcb63f4b3069362d511e8fe372a5fcda66663f6e417b88c0f8d3c40bcfef9d3d2",
     "endedAt": "2022-12-31T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "734",
+    "totalVotes": "746",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xcb63f4b3069362d511e8fe372a5fcda66663f6e417b88c0f8d3c40bcfef9d3d2",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x92d887da7150316fca05a1583d9e77430bd94923/verified_dao_experience",
-    "rank": 40
+    "rank": 43
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -609,10 +654,10 @@
     "proposalNativeId": "0x669801c43769d07d346af5f73a56f7094fa934691a9f44e19a8029f864813d11",
     "endedAt": "2022-12-20T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "678",
+    "totalVotes": "690",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x669801c43769d07d346af5f73a56f7094fa934691a9f44e19a8029f864813d11",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9b79c43b6b2859e69d40aa585f2473a792ab9869/verified_dao_experience",
-    "rank": 41
+    "rank": 44
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -624,10 +669,10 @@
     "proposalNativeId": "0x1e728138a88636fe4c1896f6110d66967610d546cfebd09619766428a4f157dc",
     "endedAt": "2022-12-31T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "769",
+    "totalVotes": "781",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x1e728138a88636fe4c1896f6110d66967610d546cfebd09619766428a4f157dc",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xfece7fa71657cbb6a22b2ce825761b9c86aac70e/verified_dao_experience",
-    "rank": 42
+    "rank": 45
   },
   {
     "organizationId": "bff66cf5-8824-4842-bfc6-a6331b9b2a00",
@@ -639,10 +684,10 @@
     "proposalNativeId": "0xbda0e588b8305369259dd1f0c2192d8f3a841f7551615009339b5263877a9539",
     "endedAt": "2022-11-30T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "731",
+    "totalVotes": "743",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xbda0e588b8305369259dd1f0c2192d8f3a841f7551615009339b5263877a9539",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x3936f2f785d39ce6736f19bbbd5a44e23e1f6932/verified_dao_experience",
-    "rank": 43
+    "rank": 46
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -654,10 +699,10 @@
     "proposalNativeId": "QmZCvWqN4nxRiFdLDdVHvxwovR5JJ6kxqchad2it2fYZeR",
     "endedAt": "2023-06-11T00:15:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "351",
+    "totalVotes": "352",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmZCvWqN4nxRiFdLDdVHvxwovR5JJ6kxqchad2it2fYZeR",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x2cc21d87deecf317adbbd85dbd13f6a6091d6e79/verified_dao_experience",
-    "rank": 44
+    "rank": 47
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -669,10 +714,10 @@
     "proposalNativeId": "QmZzzkWd5z543ycs4sxoP8zyKMKMKPQSmDFsDEcuhuAkRF",
     "endedAt": "2023-01-01T00:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "343",
+    "totalVotes": "344",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmZzzkWd5z543ycs4sxoP8zyKMKMKPQSmDFsDEcuhuAkRF",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x2cc21d87deecf317adbbd85dbd13f6a6091d6e79/verified_dao_experience",
-    "rank": 45
+    "rank": 48
   },
   {
     "organizationId": "58f31894-b468-4d4c-8b1d-7e73278f059b",
@@ -687,7 +732,7 @@
     "totalVotes": "734",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x9bcf495cd88d7d005c8991c5fb6ca9b4cce2489cb86e19644fcc921a0ffc0c73",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x43d6703d429013691b59cdc0196627ba10594b4d/verified_dao_experience",
-    "rank": 46
+    "rank": 49
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -699,10 +744,10 @@
     "proposalNativeId": "QmWdaaN1zjLbyW2FpUWLyhXY8heWMv3GVS8kZoviwGxAGd",
     "endedAt": "2032-02-01T00:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "905",
+    "totalVotes": "906",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmWdaaN1zjLbyW2FpUWLyhXY8heWMv3GVS8kZoviwGxAGd",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xd3bae990fd596ff86c7a3617538aba89592d64d9/verified_dao_experience",
-    "rank": 47
+    "rank": 50
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -717,7 +762,7 @@
     "totalVotes": "849",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmNkvCVdM3VpaUtubmrpjrzRT3KsFvnvz6wxb15nLZXhzz",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xd3bae990fd596ff86c7a3617538aba89592d64d9/verified_dao_experience",
-    "rank": 48
+    "rank": 51
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -732,7 +777,7 @@
     "totalVotes": "835",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmTs1uLGUHz4nA4oJhkMgsLdR265aA2GkgqR3WXkpSnRLV",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x42ba001719ce41fd28249073a7fb55630b5f9185/verified_dao_experience",
-    "rank": 49
+    "rank": 52
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -747,7 +792,7 @@
     "totalVotes": "384",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmUrVGts4ZgZWRDW88kDdkGntcaDojYZEnngqW1BuvtrpJ",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x2fd9739d0b1470f265321592a9b7e331ddbb7045/verified_dao_experience",
-    "rank": 50
+    "rank": 53
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -762,7 +807,7 @@
     "totalVotes": "865",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmUELhXj1qPLZHdCS1BZXdAQarzgKnqDqnU6AE7VhULvyS",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xdb9c0139026337255dd83e35ab415e1e095c36e1/verified_dao_experience",
-    "rank": 51
+    "rank": 54
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -777,7 +822,7 @@
     "totalVotes": "254",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmSRVzxoqhzTDExpv3KRYuTZZ5TZWPdNjazkXZHLVLv8Cs",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x2f4879b1e962df56a82a8758a58344fa706d8943/verified_dao_experience",
-    "rank": 52
+    "rank": 55
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -792,7 +837,7 @@
     "totalVotes": "284",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmZCZRCwo9Ng7sm32i7qUq7t86wJhWn84x6zGR7EpKM5fq",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xeee268de2f01808f1ba6ff1a8714233f29d6a445/verified_dao_experience",
-    "rank": 53
+    "rank": 56
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -807,7 +852,7 @@
     "totalVotes": "1036",
     "proposalUrl": "https://deepdao.io/feed-proposal/Qmbkrcx9pscxBmRB97sX7UDsWHd6kTwMUH5Lvo9GqELSUx",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x4946065a94536b3a730a271f9400d4a11a459f43/verified_dao_experience",
-    "rank": 54
+    "rank": 57
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -822,7 +867,7 @@
     "totalVotes": "1088",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmNUGhK32KbQ1ePa5UBGkXrUdVpn4dz7PtYgXyh3EbNhEn",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x4946065a94536b3a730a271f9400d4a11a459f43/verified_dao_experience",
-    "rank": 55
+    "rank": 58
   },
   {
     "organizationId": "a356feb3-546c-457b-a1c5-cde5bb39d5df",
@@ -834,10 +879,10 @@
     "proposalNativeId": "0x8a0f66380258ab056c609192a3df6b3cb233d5652cfb91e197dbd3acfa8deb71",
     "endedAt": "2023-01-04T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "318",
+    "totalVotes": "319",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x8a0f66380258ab056c609192a3df6b3cb233d5652cfb91e197dbd3acfa8deb71",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xab93bf0635ccf8e6e1e136922f1c793c3f4f6014/verified_dao_experience",
-    "rank": 56
+    "rank": 59
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -852,7 +897,7 @@
     "totalVotes": "717",
     "proposalUrl": "https://deepdao.io/feed-proposal/Qmcn62G2HKtRTmohxQ9Ki2LAUVWY9a5khBTFbRqi6oi5M8",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xf35ec9f6a76877796ae9d35d5e5e4452d0d95786/verified_dao_experience",
-    "rank": 57
+    "rank": 60
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -867,7 +912,7 @@
     "totalVotes": "612",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmYSK5qib4KX5hnX4jNbTQZG7ka3fkhHdXQq9ucPjNtpZq",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xf35ec9f6a76877796ae9d35d5e5e4452d0d95786/verified_dao_experience",
-    "rank": 58
+    "rank": 61
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -882,7 +927,7 @@
     "totalVotes": "1770",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmRvtmET4PUYCLZn9msmMR3DbxGU3jrZfNQ8rv4FBSUS3c",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xc9cf4b850c90bbeb81ff413826d2e69106ea3a27/verified_dao_experience",
-    "rank": 59
+    "rank": 62
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -897,7 +942,7 @@
     "totalVotes": "1591",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmaPaBG4XqXuvCU9qB9kb6h4NxgjLcofrgJYxhNeSdAXNd",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x8a9eb31cfe5680100cbed967fb423565aabb7270/verified_dao_experience",
-    "rank": 60
+    "rank": 63
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -912,7 +957,7 @@
     "totalVotes": "1206",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xddf6000abf9089883d15ecd1022c6d22eda65bd11ed61c753a124da8fc31c60b",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x86304c499baf3eea0265c941e204449ad0f01df6/verified_dao_experience",
-    "rank": 61
+    "rank": 64
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -927,7 +972,7 @@
     "totalVotes": "794",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmSTmLZxE3AXV1sjcuaemvP46BuZYbk1t6xPLLNX81gs7r",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x55d3a17f03ea81222fdf125e1bfd79aab0602ab7/verified_dao_experience",
-    "rank": 62
+    "rank": 65
   },
   {
     "organizationId": "439fb7db-431c-4d93-a9cf-49a59a73a739",
@@ -942,7 +987,7 @@
     "totalVotes": "248",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x97b0b5d7680fa631d8272791b86444b7348f6467465ca3c2dddcabd4783aef17",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xce0dacc4e88c14512e56155f8faaeacdaaeb4ea2/verified_dao_experience",
-    "rank": 63
+    "rank": 66
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -957,7 +1002,7 @@
     "totalVotes": "1384",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmVx9wrN6kDRJXaGcaj7uggDywE1s93qMTLQ2PGVPzAbbG",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xe3c4dab7f80236c451a8b10704174e277d6d33d7/verified_dao_experience",
-    "rank": 64
+    "rank": 67
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -972,7 +1017,7 @@
     "totalVotes": "583",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmRjdhbqeLe6MYBQicLC53sMz4uYcsp5fzJ5657AckvyrN",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xdab5193a0920302bf5c12a7ac16d56e1b283cf97/verified_dao_experience",
-    "rank": 65
+    "rank": 68
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -987,7 +1032,7 @@
     "totalVotes": "898",
     "proposalUrl": "https://deepdao.io/feed-proposal/QmRqjAV6tMduLSgQhE8mdmyUoGChT5xYF2v61YgzmeB4fS",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x42ba001719ce41fd28249073a7fb55630b5f9185/verified_dao_experience",
-    "rank": 66
+    "rank": 69
   },
   {
     "organizationId": "839dae4c-9129-4bfd-966d-5f3c1f713653",
@@ -1002,7 +1047,7 @@
     "totalVotes": "236",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xb3bdc64bddcfe41819f41fb7e59070b4706e0557ae6a310f4f12105af684c719",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x66ab770a229523cfb13639a2cfcc9565331d9881/verified_dao_experience",
-    "rank": 67
+    "rank": 70
   },
   {
     "organizationId": "839dae4c-9129-4bfd-966d-5f3c1f713653",
@@ -1017,7 +1062,7 @@
     "totalVotes": "208",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x22102486218388b2e6460380aa851a097788b550458a5e02a2def8f5b9297a01",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x4e0f090d9ff07403de7931129939c9744eedb4f2/verified_dao_experience",
-    "rank": 68
+    "rank": 71
   },
   {
     "organizationId": "839dae4c-9129-4bfd-966d-5f3c1f713653",
@@ -1032,51 +1077,6 @@
     "totalVotes": "204",
     "proposalUrl": "https://deepdao.io/feed-proposal/0x5d7e2da3dcf789ad2cf6c047d377ca793568e45cc846884f27eabf6305240784",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x8a657cc0ad6f55adf94b6d06bd82a0e863afea99/verified_dao_experience",
-    "rank": 69
-  },
-  {
-    "organizationId": "839dae4c-9129-4bfd-966d-5f3c1f713653",
-    "platform": "SNAPSHOT",
-    "title": "matcidejiagehelima?",
-    "description": "",
-    "proposer": "0x4331bcf53b7f822d445c6ada3730fe5d9686c3f9",
-    "proposalCreatedAt": "2021-12-09T02:59:24.000Z",
-    "proposalNativeId": "0xe06b2101973826f68f0fbc5880d8793568a7f6b4a18755acda9c45ce057a8571",
-    "endedAt": "2023-03-31T04:00:00.000Z",
-    "status": "ACTIVE",
-    "totalVotes": "179",
-    "proposalUrl": "https://deepdao.io/feed-proposal/0xe06b2101973826f68f0fbc5880d8793568a7f6b4a18755acda9c45ce057a8571",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0x4331bcf53b7f822d445c6ada3730fe5d9686c3f9/verified_dao_experience",
-    "rank": 70
-  },
-  {
-    "organizationId": "839dae4c-9129-4bfd-966d-5f3c1f713653",
-    "platform": "SNAPSHOT",
-    "title": "polygonhuijiejueyoududewentima?",
-    "description": "",
-    "proposer": "0x2df8dd6417e6b6e004e27bc396e02f8de716e648",
-    "proposalCreatedAt": "2021-12-09T02:56:30.000Z",
-    "proposalNativeId": "0x560982336fe443e89010c5f093fc647d9e343d73efcb2dcbcd4474f545c70c1f",
-    "endedAt": "2023-04-30T04:00:00.000Z",
-    "status": "ACTIVE",
-    "totalVotes": "181",
-    "proposalUrl": "https://deepdao.io/feed-proposal/0x560982336fe443e89010c5f093fc647d9e343d73efcb2dcbcd4474f545c70c1f",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0x2df8dd6417e6b6e004e27bc396e02f8de716e648/verified_dao_experience",
-    "rank": 71
-  },
-  {
-    "organizationId": "839dae4c-9129-4bfd-966d-5f3c1f713653",
-    "platform": "SNAPSHOT",
-    "title": "matichuidao4meiyuanma?",
-    "description": "",
-    "proposer": "0x03d0f40f6f2fdf92cb56f9de9089c2a10adcf259",
-    "proposalCreatedAt": "2021-12-09T02:52:02.000Z",
-    "proposalNativeId": "0xc4b5e28c3ed7eef6739119037d64500990f5a2d56147d38416f997b6198f8e2b",
-    "endedAt": "2023-03-31T04:00:00.000Z",
-    "status": "ACTIVE",
-    "totalVotes": "183",
-    "proposalUrl": "https://deepdao.io/feed-proposal/0xc4b5e28c3ed7eef6739119037d64500990f5a2d56147d38416f997b6198f8e2b",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0x03d0f40f6f2fdf92cb56f9de9089c2a10adcf259/verified_dao_experience",
     "rank": 72
   },
   {
@@ -1284,7 +1284,7 @@
     "proposalNativeId": "0xa2ae58608578e84dff03c9cdc133696c7ce40f3fafdd6d946f380dcc1836b14b",
     "endedAt": "2023-11-16T11:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "368",
+    "totalVotes": "369",
     "proposalUrl": "https://deepdao.io/feed-proposal/0xa2ae58608578e84dff03c9cdc133696c7ce40f3fafdd6d946f380dcc1836b14b",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xe284d93e16dbb8dc75aa22d8022fcfb076ac8183/verified_dao_experience",
     "rank": 86
