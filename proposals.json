@@ -11,10 +11,10 @@
     "status": "ACTIVE",
     "totalVotes": "390",
     "choicesMappedToScores": {
-      "Limit open market to 1": 212208.26938946272,
-      "Keep original unlimited system": 657422.0896009802,
-      "Limit market to # of parcels + 1": 4550205.591945256,
-      "Unlimited open, limit whitelists": 287268.9220394815
+      "Limit open market to 1": 263074.3524959417,
+      "Keep original unlimited system": 760092.1209584053,
+      "Limit market to # of parcels + 1": 6682993.742708748,
+      "Unlimited open, limit whitelists": 509304.557503866
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x9b2559ed4cd5dd0c4c3c9b90b73e0e93c839aef64cd00df2d65cc8e97886ac0f",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x7e4724c60718a9f87ce51bcf8812bf90d0b7b9db/verified_dao_experience",
@@ -32,9 +32,9 @@
     "status": "ACTIVE",
     "totalVotes": "383",
     "choicesMappedToScores": {
-      "Keep FRENS as they are": 353155.2042979073,
-      "Sunset FRENS immediately": 4668475.062575963,
-      "Taper FRENS w/ end date of 10/1": 722372.0990809522
+      "Keep FRENS as they are": 435504.2622514513,
+      "Sunset FRENS immediately": 6812064.215131541,
+      "Taper FRENS w/ end date of 10/1": 1095583.9047460111
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x9d8fa69132f66ad8e665549cff91c08de8687a72d2702cb66cd41dbb877f09f7",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x7e4724c60718a9f87ce51bcf8812bf90d0b7b9db/verified_dao_experience",
@@ -52,8 +52,8 @@
     "status": "ACTIVE",
     "totalVotes": "217",
     "choicesMappedToScores": {
-      "For": 1096468.941632256,
-      "Against": 54448.49849413738
+      "For": 1245343.2826584422,
+      "Against": 104787.60202151266
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x9b76fc333a9c90271c7c3dff976dae8afd9a7518b23d072c53f57c5da9f25880",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x5f799f365fa8a2b60ac0429c48b153ca5a6f0cf8/verified_dao_experience",
@@ -71,9 +71,9 @@
     "status": "ACTIVE",
     "totalVotes": "642",
     "choicesMappedToScores": {
-      "NAE": 1.2032711363184363,
-      "YAE": 78930.37456986043,
-      "ABSTAIN": 87.1212579269385
+      "NAE": 2.309269146991862,
+      "YAE": 246300.1548406592,
+      "ABSTAIN": 108.28059837788165
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x519f6ecb17b00eb9c2c175c586173b15cfa5199247903cda9ddab48763ddb035",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xc290cfb8d020c0615e9c63036f4319cc41717e68/verified_dao_experience",
@@ -91,35 +91,13 @@
     "status": "ACTIVE",
     "totalVotes": "620",
     "choicesMappedToScores": {
-      "NAE": 0.21993808350398855,
-      "YAE": 79050.89735115807,
-      "ABSTAIN": 3.873301977296408
+      "NAE": 2.293027291441946,
+      "YAE": 246433.71969973823,
+      "ABSTAIN": 5.990989801201685
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x19df23070be999efbb7caf6cd35c320eb74dd119bcb15d003dc2e82c2bbd0d94",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xc290cfb8d020c0615e9c63036f4319cc41717e68/verified_dao_experience",
     "rank": 5
-  },
-  {
-    "organizationId": "a99b4c42-56a8-4118-92d2-615c3985f0b7",
-    "platform": "SNAPSHOT",
-    "title": "[GIP-16] Bug Bounty: 08.2022 Payout and process structuring",
-    "description": "This proposal consists of three parts. \n\nThe first part authorizes a payout of an Immunefi bounty for a critical bug discovered on August 12. \n\nParts 2 and 3 aim to formalize and streamline the processes regarding oversight and payouts of bug bounties.\n\n### Part 1: August Bug Bounty Payout\nOn August 12.08.2022, all 4 Credit Managers were paused by the pause function - due to a reported bug on Immunefi. That happened quickly after developers confirmed the bug and tested the vulnerability. A week later the fix was made, tested, soft-audited & deployed. The protocol was thus unpaused. Post-mortem is to follow soon, see Discord for more info 1.\n\nAs per the program details set up previously, the payout is:\n\n- $150,000 as CRITICAL ISSUE to the designated addresses confirmed by the whitehat: 0xEab01F3A309f680B08a28B9ED3aFF417ca0E4345\n- 10% of that is Immunefi\u2019s fee aka $15,000 to the designated addresses confirmed by the Immunefi team: immunefi.eth\n\nAs the DAO now controls the protocol & all its operations, this vote is to approve the payout of the bug bounty as confirmed by the protocol developers. \n\n### Part 2: Financial Multisig authorized to pay out bounties\n\nThe financial multisig would be allowed to release payments according to the bug bounty structure in cases when developers overseeing the bug bounty program confirm & fix the issues if presented. That is, to avoid redundant governance voting procedures.\n\n### Part 3: Bug Bounty Oversight Committee\n\nA committee that has direct access to bug reports and coordinates appropriate responses would be formally established. Initial members (per Discord handles):\n\nThreat assessment and solution development:\n- Mikael\n- Van0k\n- apeir99n\n\nCoordination with Immunefi and tech multisig:\n- ivangbi",
-    "proposer": "0xb9b7db94d57fe25907620eaae42b9780176cceea",
-    "proposalCreatedAt": "2022-08-24T10:46:51.000Z",
-    "proposalNativeId": "0x567c9d94951bf08769648399a629e4325215d46a7ed849df5b2cd122ceae187d",
-    "endedAt": "2022-08-27T10:46:07.000Z",
-    "status": "ACTIVE",
-    "totalVotes": "923",
-    "choicesMappedToScores": {
-      "No to all": 200000,
-      "Yes to all": 217880000,
-      "Yes to 1 only": 1870000,
-      "Yes to 1 and 2": 444000,
-      "Yes to 1 and 3": 18880000
-    },
-    "proposalUrl": "https://deepdao.io/feed-proposal/0x567c9d94951bf08769648399a629e4325215d46a7ed849df5b2cd122ceae187d",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0xb9b7db94d57fe25907620eaae42b9780176cceea/verified_dao_experience",
-    "rank": 6
   },
   {
     "organizationId": "8fe2c487-5c66-475f-ba82-aebe0bf2db35",
@@ -133,12 +111,12 @@
     "status": "ACTIVE",
     "totalVotes": "227",
     "choicesMappedToScores": {
-      "Reject": 18,
-      "Approve": 270
+      "Reject": 19,
+      "Approve": 277
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x6bd883e7d7730b9f38cd2e2d629350b2fea6eec0d4c1625c696993d67139d96a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x34a24894559457e8b56ef76bcce01c403636ba19/verified_dao_experience",
-    "rank": 7
+    "rank": 6
   },
   {
     "organizationId": "219ab5ef-9345-448b-bbf2-786a33e4edd8",
@@ -152,13 +130,13 @@
     "status": "ACTIVE",
     "totalVotes": "649",
     "choicesMappedToScores": {
-      "Add 30k GHST + equal alchemica": 937585.8554425744,
-      "Add 50k GHST + equal alchemica": 9896303.670367,
-      "Do not add GHST/alchemica to LPs": 195668.04405926037
+      "Add 30k GHST + equal alchemica": 1173795.96237202,
+      "Add 50k GHST + equal alchemica": 10783577.934296863,
+      "Do not add GHST/alchemica to LPs": 234947.88973166473
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x84f361a72e89cee4e27f4d9a7eb5793e0209a0f364a6de9f4f076c43e49b9404",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xd281f988242c900d67ff2aafabe683b8004ee778/verified_dao_experience",
-    "rank": 8
+    "rank": 7
   },
   {
     "organizationId": "fd991dca-141d-4e23-a23b-5d908110c337",
@@ -177,7 +155,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0xcb31f1b6e8c160a4c1ccb0145edf3102c8561cf409a68baff9fa629cd1b5e37a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x0f0b2adc2c4da73ed2721f6f270cbacf8c5355bb/verified_dao_experience",
-    "rank": 9
+    "rank": 8
   },
   {
     "organizationId": "d658d832-10bc-4a4d-a2f6-e701f2df2963",
@@ -195,7 +173,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x66f1890fe2eb9995f7ebc877aedb69ff73424dd80b774a8955f4c14be68bf360",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9eafa492ea977985d16cb3c2007a92c446950c2e/verified_dao_experience",
-    "rank": 10
+    "rank": 9
   },
   {
     "organizationId": "2627b664-fed1-4a35-b0a4-c7da20e82c72",
@@ -214,7 +192,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x6416317c3345ef693df606480035f05832792d6a108d1941c85f73dbeee1cce1",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9596eff0cdadec7fb16a6abcf1513919a7acd738/verified_dao_experience",
-    "rank": 11
+    "rank": 10
   },
   {
     "organizationId": "390f2dc4-f7d6-4ea1-bc11-f168afadabbd",
@@ -233,7 +211,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x265e1ba6757bdf7421c1eb411d884d24c489ea5886f43aab7c8e74a06ae8a3ee",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xb2732746e3fdd68b94ff1a6dd7e2744743aaac78/verified_dao_experience",
-    "rank": 12
+    "rank": 11
   },
   {
     "organizationId": "656f4b59-1cb8-4c3f-a9cb-4c1ca55f5a1e",
@@ -254,7 +232,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x4fe5bb66fb43b0a61376b2173d85a39df3f4b28131995674161072e2c1320ade",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x4c7909d6f029b3a5798143c843f4f8e5341a3473/verified_dao_experience",
-    "rank": 13
+    "rank": 12
   },
   {
     "organizationId": "b6b47015-4dd4-45e2-b4c0-db707e1ed25e",
@@ -273,7 +251,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x29291b60cabc79c97e6b021a3aae895d43f3783f6c59d4c8a885b86c068aab7a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xfa68c97a6d477c78ca6ff3cac41a26ecf995bd81/verified_dao_experience",
-    "rank": 14
+    "rank": 13
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -292,6 +270,26 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/QmdxXnx2V7zfoG2bQ7Pqw1NKsFWnU6H3rVcrKTnJRv3m9J",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x59f4b03059396d6d30acaac394895b80b2d625da/verified_dao_experience",
+    "rank": 14
+  },
+  {
+    "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
+    "platform": "SNAPSHOT",
+    "title": "What is your preffered \"LockTime Staking)",
+    "description": "As you know soon lovely FIXED TERM staking pool will lunch ! \n\nSo tell me what is your preffered LOCED PERIOD OF TIME staking choose ?!\n",
+    "proposer": "0x390068fd83a5772d40d99f490088b12829c5aeea",
+    "proposalCreatedAt": "2022-04-06T03:28:34.000Z",
+    "proposalNativeId": "QmQC6a9pVDXFbTUgkaNBHCCoXeUd8ye6hVGSmZ3ypRHNs4",
+    "endedAt": "2023-04-05T19:30:00.000Z",
+    "status": "ACTIVE",
+    "totalVotes": "183",
+    "choicesMappedToScores": {
+      "10 Weeks (70 days)": 3197.2355657615763,
+      "26 Weeks (182 days)": 579.2814645444513,
+      "52 Weeks (364 days)": 0.3068524481203974
+    },
+    "proposalUrl": "https://deepdao.io/feed-proposal/QmQC6a9pVDXFbTUgkaNBHCCoXeUd8ye6hVGSmZ3ypRHNs4",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0x390068fd83a5772d40d99f490088b12829c5aeea/verified_dao_experience",
     "rank": 15
   },
   {
