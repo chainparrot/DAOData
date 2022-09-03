@@ -11,10 +11,10 @@
     "status": "ACTIVE",
     "totalVotes": "359",
     "choicesMappedToScores": {
-      "No to all": 130000,
-      "YES to BOTH": 150112000,
-      "Yes to part 1 only": 100000,
-      "Yes to part 2 only": 504000
+      "No to all": 390000,
+      "YES to BOTH": 208116000,
+      "Yes to part 1 only": 130000,
+      "Yes to part 2 only": 534000
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0xae71a18a91fd9d6bf8a77b7c01e70246f97901280b5758c72b2ca88621a6a989",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xf3d476566bcc8e882a3910f1471428522449d89e/verified_dao_experience",
@@ -32,10 +32,10 @@
     "status": "ACTIVE",
     "totalVotes": "783",
     "choicesMappedToScores": {
-      "No": 265.36496092788036,
-      "Abstain": 1370.7880326990771,
-      "Yes and pay 60 AAVE tokens": 201957.92586039513,
-      "Yes and decide payment later": 6771.742532663854
+      "No": 267.004215871424,
+      "Abstain": 1374.8247551195052,
+      "Yes and pay 60 AAVE tokens": 214380.45247232568,
+      "Yes and decide payment later": 6836.8187875999465
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0xa121311c67b7a5bbe5b8b5fe1911663a0ab94ed339a6a4b0e1b9443f670a0e97",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xdd659911ecbd4458db07ee7cddec79bf8f859abc/verified_dao_experience",
@@ -54,43 +54,23 @@
     "totalVotes": "309",
     "choicesMappedToScores": {
       "Walkable course ": 1,
-      "Near a major airport": 139,
-      "Has more than 18 holes": 13,
-      "Ability to play year round": 272,
+      "Near a major airport": 140,
+      "Has more than 18 holes": 22,
+      "Ability to play year round": 298,
       "Has other amenities onsite": 1,
       "Has private lodging nearby": 6,
-      "Close to other golf options": 5,
-      "Has great clubhouse and bar": 59,
-      "Ready to play within months": 54,
+      "Close to other golf options": 7,
+      "Has great clubhouse and bar": 71,
+      "Ready to play within months": 56,
       "Playable by all skill levels": 31,
-      "Uniqueness of course (style)": 14,
+      "Uniqueness of course (style)": 15,
       "Designed by a famous architect": 16,
       "Has extensive practice facility": 10,
-      "High course quality (top 100ish)": 858
+      "High course quality (top 100ish)": 898
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0xde8c95e9beb1fb89bdd8388bca302fcc49d4a43e66a5e455cb957fe0470ae19e",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xeb68669d321e1459900d83595818ce1313a4d90f/verified_dao_experience",
     "rank": 3
-  },
-  {
-    "organizationId": "9cc495be-6062-4b31-b4f8-424438ec1ed4",
-    "platform": "SAFE",
-    "title": "Aave V3 Retroactive Funding ",
-    "description": "Following the successful launch of V3 of the Aave Protocol, this Snapshot seeks approval from the Aave DAO to provide retroactive funding for the development and deployment of V3 by the Aave Companies.\n\nAave V3 provided enhanced features to the Aave Protocol based on community feedback, solving limitations in V2 while pushing important new features to the forefront of the protocol and contributing to the overall success and strength of the Aave ecosystem.\n\nSome of the important new features include:\n\n- New modes such as the High Efficiency Mode and Isolation Mode which allow for increased capital efficiency whilst limiting risks for the protocol.\n- Risk Management Improvements providing additional protection to the protocol through risk caps and other tools.\n- L2-Specific features which improve user experience and reliability.\n- Portal, which allows assets to seamlessly flow between Aave V3 markets over different networks\n\nWe propose that the Aave DAO retribute $15 million (incurred work) and $1.28 million (audit) to the Aave Companies to retroactively fund the development of V3. This funding request covers work done by members of the Aave Companies over the course of more than a year.\n\nIf this Snapshot receives community approval an AIP will be published at a later date to proceed as outlined.\n\nThe full proposal can be found here: https://governance.aave.com/t/arc-aave-v3-retroactive-funding/9250/25?u=aavecompanies\n\n\n\n",
-    "proposer": "0x935ae149899856f9370be6f4a8e40eb622270ea0",
-    "proposalCreatedAt": "2022-08-28T15:50:21.000Z",
-    "proposalNativeId": "bafkreia45d5m6y3o4b476ykp6q65v3zlecxvz6h57tdfhowqm5wb5nzdvq",
-    "endedAt": "2022-09-01T16:00:00.000Z",
-    "status": "ACTIVE",
-    "totalVotes": "1292",
-    "choicesMappedToScores": {
-      "For": 392031.9912236313,
-      "Abstain": 13.63427524552174,
-      "Against": 148.45946394659794
-    },
-    "proposalUrl": "https://deepdao.io/feed-proposal/bafkreia45d5m6y3o4b476ykp6q65v3zlecxvz6h57tdfhowqm5wb5nzdvq",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0x935ae149899856f9370be6f4a8e40eb622270ea0/verified_dao_experience",
-    "rank": 4
   },
   {
     "organizationId": "219ab5ef-9345-448b-bbf2-786a33e4edd8",
@@ -104,14 +84,14 @@
     "status": "ACTIVE",
     "totalVotes": "576",
     "choicesMappedToScores": {
-      "Limit open market to 1": 411697.9977972856,
-      "Keep original unlimited system": 962512.3961183532,
-      "Limit market to # of parcels + 1": 9738311.601825932,
+      "Limit open market to 1": 422247.1407534526,
+      "Keep original unlimited system": 975378.1868529774,
+      "Limit market to # of parcels + 1": 9844668.255140612,
       "Unlimited open, limit whitelists": 837423.3443391683
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x9b2559ed4cd5dd0c4c3c9b90b73e0e93c839aef64cd00df2d65cc8e97886ac0f",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x7e4724c60718a9f87ce51bcf8812bf90d0b7b9db/verified_dao_experience",
-    "rank": 5
+    "rank": 4
   },
   {
     "organizationId": "219ab5ef-9345-448b-bbf2-786a33e4edd8",
@@ -125,13 +105,13 @@
     "status": "ACTIVE",
     "totalVotes": "563",
     "choicesMappedToScores": {
-      "Keep FRENS as they are": 917697.036618509,
-      "Sunset FRENS immediately": 9284716.255911345,
-      "Taper FRENS w/ end date of 10/1": 1790172.3249963624
+      "Keep FRENS as they are": 928715.7083910464,
+      "Sunset FRENS immediately": 9364791.355260458,
+      "Taper FRENS w/ end date of 10/1": 1810828.2497451976
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x9d8fa69132f66ad8e665549cff91c08de8687a72d2702cb66cd41dbb877f09f7",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x7e4724c60718a9f87ce51bcf8812bf90d0b7b9db/verified_dao_experience",
-    "rank": 6
+    "rank": 5
   },
   {
     "organizationId": "0c06f49b-0655-4858-9e18-b5cfa1447059",
@@ -145,12 +125,12 @@
     "status": "ACTIVE",
     "totalVotes": "374",
     "choicesMappedToScores": {
-      "For": 1704543.5523048704,
-      "Against": 107596.5845129058
+      "For": 1713338.7922005034,
+      "Against": 151218.31535658293
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x9b76fc333a9c90271c7c3dff976dae8afd9a7518b23d072c53f57c5da9f25880",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x5f799f365fa8a2b60ac0429c48b153ca5a6f0cf8/verified_dao_experience",
-    "rank": 7
+    "rank": 6
   },
   {
     "organizationId": "fd991dca-141d-4e23-a23b-5d908110c337",
@@ -169,7 +149,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0xcb31f1b6e8c160a4c1ccb0145edf3102c8561cf409a68baff9fa629cd1b5e37a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x0f0b2adc2c4da73ed2721f6f270cbacf8c5355bb/verified_dao_experience",
-    "rank": 8
+    "rank": 7
   },
   {
     "organizationId": "d658d832-10bc-4a4d-a2f6-e701f2df2963",
@@ -187,7 +167,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x66f1890fe2eb9995f7ebc877aedb69ff73424dd80b774a8955f4c14be68bf360",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9eafa492ea977985d16cb3c2007a92c446950c2e/verified_dao_experience",
-    "rank": 9
+    "rank": 8
   },
   {
     "organizationId": "2627b664-fed1-4a35-b0a4-c7da20e82c72",
@@ -206,7 +186,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x6416317c3345ef693df606480035f05832792d6a108d1941c85f73dbeee1cce1",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9596eff0cdadec7fb16a6abcf1513919a7acd738/verified_dao_experience",
-    "rank": 10
+    "rank": 9
   },
   {
     "organizationId": "390f2dc4-f7d6-4ea1-bc11-f168afadabbd",
@@ -225,7 +205,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x265e1ba6757bdf7421c1eb411d884d24c489ea5886f43aab7c8e74a06ae8a3ee",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xb2732746e3fdd68b94ff1a6dd7e2744743aaac78/verified_dao_experience",
-    "rank": 11
+    "rank": 10
   },
   {
     "organizationId": "656f4b59-1cb8-4c3f-a9cb-4c1ca55f5a1e",
@@ -246,7 +226,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x4fe5bb66fb43b0a61376b2173d85a39df3f4b28131995674161072e2c1320ade",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x4c7909d6f029b3a5798143c843f4f8e5341a3473/verified_dao_experience",
-    "rank": 12
+    "rank": 11
   },
   {
     "organizationId": "b6b47015-4dd4-45e2-b4c0-db707e1ed25e",
@@ -265,7 +245,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x29291b60cabc79c97e6b021a3aae895d43f3783f6c59d4c8a885b86c068aab7a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xfa68c97a6d477c78ca6ff3cac41a26ecf995bd81/verified_dao_experience",
-    "rank": 13
+    "rank": 12
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -284,6 +264,26 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/QmdxXnx2V7zfoG2bQ7Pqw1NKsFWnU6H3rVcrKTnJRv3m9J",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x59f4b03059396d6d30acaac394895b80b2d625da/verified_dao_experience",
+    "rank": 13
+  },
+  {
+    "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
+    "platform": "SNAPSHOT",
+    "title": "What is your preffered \"LockTime Staking)",
+    "description": "As you know soon lovely FIXED TERM staking pool will lunch ! \n\nSo tell me what is your preffered LOCED PERIOD OF TIME staking choose ?!\n",
+    "proposer": "0x390068fd83a5772d40d99f490088b12829c5aeea",
+    "proposalCreatedAt": "2022-04-06T03:28:34.000Z",
+    "proposalNativeId": "QmQC6a9pVDXFbTUgkaNBHCCoXeUd8ye6hVGSmZ3ypRHNs4",
+    "endedAt": "2023-04-05T19:30:00.000Z",
+    "status": "ACTIVE",
+    "totalVotes": "183",
+    "choicesMappedToScores": {
+      "10 Weeks (70 days)": 3197.2355657615763,
+      "26 Weeks (182 days)": 579.2814645444513,
+      "52 Weeks (364 days)": 0.3068524481203974
+    },
+    "proposalUrl": "https://deepdao.io/feed-proposal/QmQC6a9pVDXFbTUgkaNBHCCoXeUd8ye6hVGSmZ3ypRHNs4",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0x390068fd83a5772d40d99f490088b12829c5aeea/verified_dao_experience",
     "rank": 14
   },
   {
