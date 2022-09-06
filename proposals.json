@@ -115,7 +115,7 @@
     "proposalNativeId": "0x4fe5bb66fb43b0a61376b2173d85a39df3f4b28131995674161072e2c1320ade",
     "endedAt": "2022-09-30T05:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "381",
+    "totalVotes": "382",
     "choicesMappedToScores": {
       "Bob": 1.0000000003765963,
       "Alice": 245.0000045205021,
@@ -127,7 +127,7 @@
     "rank": 6
   },
   {
-    "organizationId": "114bfd44-8567-428b-a645-fbfc3f3d0283",
+    "organizationId": "b6b47015-4dd4-45e2-b4c0-db707e1ed25e",
     "platform": "SNAPSHOT",
     "title": "\u73b0\u5728\u8fd8\u662f\u725b\u5e02\u5417",
     "description": "",
@@ -784,7 +784,7 @@
     "proposalNativeId": "0xbda0e588b8305369259dd1f0c2192d8f3a841f7551615009339b5263877a9539",
     "endedAt": "2022-11-30T04:00:00.000Z",
     "status": "ACTIVE",
-    "totalVotes": "761",
+    "totalVotes": "762",
     "choicesMappedToScores": {
       "No": 98.86262108095222,
       "Yes": 5484.891843167294
