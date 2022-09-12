@@ -11,9 +11,9 @@
     "status": "ACTIVE",
     "totalVotes": "214",
     "choicesMappedToScores": {
-      "DAI": 359837.761057581,
-      "USDC": 337440.52941431623,
-      "USDT": 765279.9419147448
+      "DAI": 2205265.81983244,
+      "USDC": 2179107.5980693777,
+      "USDT": 2093397.796306918
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x49176e92ed2ee56be58da18af99df307fd3d88cf6586123b997a2e0d59acd043",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x8d194159961eb5f2c2bfe036872c21f6860b5868/verified_dao_experience",
@@ -31,9 +31,9 @@
     "status": "ACTIVE",
     "totalVotes": "485",
     "choicesMappedToScores": {
-      "No": 838599.3375305915,
-      "Abstaining": 805440.446718868,
-      "Yes, Airdrop  Potion": 5054451.135559455
+      "No": 868063.8685347938,
+      "Abstaining": 784819.8921715576,
+      "Yes, Airdrop  Potion": 5089331.508038238
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x5a2dc2a36b6d616a087c16cf2f4713e87abad28d9eb292a0e78a9872dec44665",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x2848b9f2d4faebaa4838c41071684c70688b455d/verified_dao_experience",
@@ -54,9 +54,9 @@
       "0%": 0.02,
       "1%": 1.6182432969704372,
       "2%": 1.1,
-      "3%": 5.18055531659656,
-      "4%": 4.805945373119505,
-      "5%": 101583.36292042336,
+      "3%": 5.20400859659656,
+      "4%": 4.830945373119506,
+      "5%": 151593.15526516558,
       "Abstain": 0.17182382968478893
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/bafkreiar7qfbmmabclsogilncy542cyenehjulmdhhewuzojdooer4tnje",
