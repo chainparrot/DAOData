@@ -1,25 +1,5 @@
 [
   {
-    "organizationId": "5459064d-5348-445f-b9e0-a899002bed96",
-    "platform": "SNAPSHOT",
-    "title": "[iGain IRS] How Should Farming Rewards Be Distributed?",
-    "description": "iGain IRS, Hakka Finance's latest product, is going to launch new stablecoin terms allowing investors to earn from their assets at fixed rates: respectively USDC, USDT and DAI.\n\nThese terms rely on the existence of decentralized liquidity pools, managed by users themselves, who earn transaction fees from investors. A user providing liquidity will obtain an equivalent of LP (Liquidity Provider) tokens, that he can use to withdraw his cash back later.\n\nTo attract liquidity providers and ensure constant liquidity, the Hakka Finance DAO creates farming pools where users can deposit their LP tokens to continuously mint HAKKA.\n\nFor these 3 terms, 300,000 farmable HAKKA will be added to these 3 pools!\n\nHow do you think these rewards should be distributed? Please spread your voting power accordingly.\n\nIf you use your voting power, you will be entitled to win [this NFT](https://hakka.finance/play2earn/GCdueUtHjz?utm_source=snapshot&utm_medium=vote&utm_campaign=farming_distribution)  on our Play2Earn game!",
-    "proposer": "0x8d194159961eb5f2c2bfe036872c21f6860b5868",
-    "proposalCreatedAt": "2022-09-05T10:58:31.000Z",
-    "proposalNativeId": "0x49176e92ed2ee56be58da18af99df307fd3d88cf6586123b997a2e0d59acd043",
-    "endedAt": "2022-09-11T15:59:00.000Z",
-    "status": "ACTIVE",
-    "totalVotes": "214",
-    "choicesMappedToScores": {
-      "DAI": 2205265.81983244,
-      "USDC": 2179107.5980693777,
-      "USDT": 2093397.796306918
-    },
-    "proposalUrl": "https://deepdao.io/feed-proposal/0x49176e92ed2ee56be58da18af99df307fd3d88cf6586123b997a2e0d59acd043",
-    "proposerProfilePageUrl": "https://deepdao.io/user/0x8d194159961eb5f2c2bfe036872c21f6860b5868/verified_dao_experience",
-    "rank": 1
-  },
-  {
     "organizationId": "219ab5ef-9345-448b-bbf2-786a33e4edd8",
     "platform": "SNAPSHOT",
     "title": "Airdrop Gotchi Respec Potion",
@@ -31,13 +11,13 @@
     "status": "ACTIVE",
     "totalVotes": "485",
     "choicesMappedToScores": {
-      "No": 868063.8685347938,
-      "Abstaining": 784819.8921715576,
-      "Yes, Airdrop  Potion": 5089331.508038238
+      "No": 1130658.649422641,
+      "Abstaining": 867291.53273937,
+      "Yes, Airdrop  Potion": 8228512.868462796
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x5a2dc2a36b6d616a087c16cf2f4713e87abad28d9eb292a0e78a9872dec44665",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x2848b9f2d4faebaa4838c41071684c70688b455d/verified_dao_experience",
-    "rank": 2
+    "rank": 1
   },
   {
     "organizationId": "52bf381b-79a8-4498-8504-41961beda494",
@@ -53,15 +33,15 @@
     "choicesMappedToScores": {
       "0%": 0.02,
       "1%": 1.6182432969704372,
-      "2%": 1.1,
+      "2%": 1.1044039531417016,
       "3%": 5.20400859659656,
       "4%": 4.830945373119506,
-      "5%": 151593.15526516558,
+      "5%": 151593.26530725256,
       "Abstain": 0.17182382968478893
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/bafkreiar7qfbmmabclsogilncy542cyenehjulmdhhewuzojdooer4tnje",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x683a4f9915d6216f73d6df50151725036bd26c02/verified_dao_experience",
-    "rank": 3
+    "rank": 2
   },
   {
     "organizationId": "fd991dca-141d-4e23-a23b-5d908110c337",
@@ -80,7 +60,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0xcb31f1b6e8c160a4c1ccb0145edf3102c8561cf409a68baff9fa629cd1b5e37a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x0f0b2adc2c4da73ed2721f6f270cbacf8c5355bb/verified_dao_experience",
-    "rank": 4
+    "rank": 3
   },
   {
     "organizationId": "d658d832-10bc-4a4d-a2f6-e701f2df2963",
@@ -98,7 +78,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x66f1890fe2eb9995f7ebc877aedb69ff73424dd80b774a8955f4c14be68bf360",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9eafa492ea977985d16cb3c2007a92c446950c2e/verified_dao_experience",
-    "rank": 5
+    "rank": 4
   },
   {
     "organizationId": "2627b664-fed1-4a35-b0a4-c7da20e82c72",
@@ -117,7 +97,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x6416317c3345ef693df606480035f05832792d6a108d1941c85f73dbeee1cce1",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x9596eff0cdadec7fb16a6abcf1513919a7acd738/verified_dao_experience",
-    "rank": 6
+    "rank": 5
   },
   {
     "organizationId": "390f2dc4-f7d6-4ea1-bc11-f168afadabbd",
@@ -136,7 +116,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x265e1ba6757bdf7421c1eb411d884d24c489ea5886f43aab7c8e74a06ae8a3ee",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xb2732746e3fdd68b94ff1a6dd7e2744743aaac78/verified_dao_experience",
-    "rank": 7
+    "rank": 6
   },
   {
     "organizationId": "656f4b59-1cb8-4c3f-a9cb-4c1ca55f5a1e",
@@ -157,7 +137,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x4fe5bb66fb43b0a61376b2173d85a39df3f4b28131995674161072e2c1320ade",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x4c7909d6f029b3a5798143c843f4f8e5341a3473/verified_dao_experience",
-    "rank": 8
+    "rank": 7
   },
   {
     "organizationId": "b6b47015-4dd4-45e2-b4c0-db707e1ed25e",
@@ -176,7 +156,7 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/0x29291b60cabc79c97e6b021a3aae895d43f3783f6c59d4c8a885b86c068aab7a",
     "proposerProfilePageUrl": "https://deepdao.io/user/0xfa68c97a6d477c78ca6ff3cac41a26ecf995bd81/verified_dao_experience",
-    "rank": 9
+    "rank": 8
   },
   {
     "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
@@ -195,6 +175,25 @@
     },
     "proposalUrl": "https://deepdao.io/feed-proposal/QmdxXnx2V7zfoG2bQ7Pqw1NKsFWnU6H3rVcrKTnJRv3m9J",
     "proposerProfilePageUrl": "https://deepdao.io/user/0x59f4b03059396d6d30acaac394895b80b2d625da/verified_dao_experience",
+    "rank": 9
+  },
+  {
+    "organizationId": "da9956dc-8a87-40c0-a066-b8991d67e574",
+    "platform": "SNAPSHOT",
+    "title": "Raising money for mom",
+    "description": "Hey guys, my mom needs help to build her house. Right now she lives in one room with two boys, dad isn't around and I'm trying to help her to build her new house to make life better. Can you all send $1 worth of BNB or CAKE each? It will add up and count. Thank you :)",
+    "proposer": "0x13c85f57c7fd1be58c06e62f22a0cbc90751029e",
+    "proposalCreatedAt": "2022-04-16T04:15:42.000Z",
+    "proposalNativeId": "QmYdeeiKP57bJ7exhPMNWvGyWzHLbbMdME3BemR7GC6vzA",
+    "endedAt": "2022-12-31T05:00:00.000Z",
+    "status": "ACTIVE",
+    "totalVotes": "178",
+    "choicesMappedToScores": {
+      "Sent": 126.23658752191729,
+      "Sending now :)": 0.5580441587048194
+    },
+    "proposalUrl": "https://deepdao.io/feed-proposal/QmYdeeiKP57bJ7exhPMNWvGyWzHLbbMdME3BemR7GC6vzA",
+    "proposerProfilePageUrl": "https://deepdao.io/user/0x13c85f57c7fd1be58c06e62f22a0cbc90751029e/verified_dao_experience",
     "rank": 10
   },
   {
